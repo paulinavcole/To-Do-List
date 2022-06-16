@@ -1,7 +1,7 @@
 # dealers_choice_react
 
 
-- name your database **acme_express_react** please
+- name your database **dealers_choice_react** please
 - make sure to sync and seed your data, so that we can review the application!
 - make sure to have a start:dev script and include all your dependences in your package.json
 - your package.json should have scripts for build and build:dev
