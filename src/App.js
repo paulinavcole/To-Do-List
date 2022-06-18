@@ -10,19 +10,19 @@ class App extends Component {
         }
     }
     async componentDidMount() {
-        const tasks = (await axios.get('/api/tasks')).data
-        this.setState({tasks})
+        const response = await axios.get('/api/tasks')
+        this.setState({ tasks: response.data})
     }
     render() {
+        const {tasks} = this.state
         return (
             <div>
-                {
-                    this.state.tasks.map( task => {
-                        return (
-                            <Task task={task} />
-                        )
-                    })
-                }
+                <div>
+                    <Header />
+                </div>
+                <div>
+                    <h2>Tasks ({tasks.length})</h2>
+                </div>
             </div>
         )
     }
