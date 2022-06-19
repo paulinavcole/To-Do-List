@@ -11,6 +11,7 @@ app.use('/assets', express.static('assets'));
 
 app.use('/api', require('./api'));
 
+
 const init = async() => {
     try {
         await syncAndSeed();
