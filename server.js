@@ -5,11 +5,11 @@ const path = require('path');
 
 app.use('/dist', express.static(path.join(__dirname, 'dist')));
 
-app.use('/assets', express.static('assets'));
-
 app.get('/', (req, res, next)=> res.sendFile(path.join(__dirname, 'index.html')));
 
-app.use('api', require('./api'));
+app.use('/assets', express.static('assets'));
+
+app.use('/api', require('./api'));
 
 const init = async() => {
     try {

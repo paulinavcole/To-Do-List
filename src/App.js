@@ -22,6 +22,15 @@ class App extends Component {
                 </div>
                 <div>
                     <h2>Tasks ({tasks.length})</h2>
+                    <ul>
+                        {
+                            tasks.map(task => {
+                                return (
+                                    <li>{task.name}</li>
+                                )
+                            })
+                        }
+                    </ul>
                 </div>
             </div>
         )
