@@ -10,11 +10,11 @@ class App extends Component {
         }
     }
     async componentDidMount() {
-        const response = await axios.get('/api/tasks')
-        this.setState({ tasks: response.data})
+        const response = await axios.get('/api/tasks');
+        this.setState({ tasks: response.data});
     }
     render() {
-        const {tasks} = this.state
+        const {tasks} = this.state;
         return (
             <div>
                 <div>
@@ -24,17 +24,16 @@ class App extends Component {
                     <h2>Tasks ({tasks.length})</h2>
                     <ul>
                         {
-                            tasks.map(task => {
-                                return (
-                                    <li>{task.name}</li>
+                        tasks.map(task => {
+                            return (
+                                <li>{task.name}</li>
                                 )
                             })
                         }
                     </ul>
                 </div>
             </div>
-        )
-    }
-}
+        )};
+};
 
 export default App;

@@ -1,4 +1,4 @@
-const {syncAndSeed} = require('./db/index')
+const {syncAndSeed} = require('./db/index');
 const express = require('express');
 const app = express();
 const path = require('path');

@@ -5,6 +5,6 @@ const Header = ({ toUpperCase })=> {
     return (
       <h1>{  toUpperCase ? title.toUpperCase(): title }</h1>
     );
-  }
+};
   
-  export default Header;
+export default Header;
