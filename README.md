@@ -1,4 +1,4 @@
-# dealers_choice_react
+# To Do List React App
 
 ## Before running this app:
 
